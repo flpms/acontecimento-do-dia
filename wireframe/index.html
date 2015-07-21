@@ -1,29 +1,79 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Acontecimento do Dia</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <style type="text/css">
+    body { padding-top: 70px; }
+    .caption h2 { font-size: 18px; }
+    .final-paragraph:after {
+        background: linear-gradient(to top, rgba(255,255,255, 1) 20%, rgba(255,255,255, 0) 80%);
+        content: "";
+        display: inline-block;
+        height: 130px;
+        margin-top: -150px;
+        width: 100%;
+    }
+    </style>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-default">
-            <h1>Acontecimento do Dia</h1>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img alt="Acontecimento do dia" src="/images/logo.jpg" height="20px" />
+                    </a>
+                    <p class="navbar-text">Acontecimento do dia</p>
+                </div>
+            </div>
         </nav>
     </header>
-    <section>
-        <h1>No passado</h1>
-        <article>
-            <h2><a href="#"></a></h2>
-        </article>
-    </section>
-    <section>
-        <h1>No presente</h1>
-    </section>
-    <section>
-        <h1>No futuro</h1>
-    </section>
-    <footer>
-    </footer>
-
+    <div class="container">
+        <section class="col-md-4 col-sm-12">
+            <h1>No passado</h1>
+            <article class="col-md-12">
+                <div class="thumbnail">
+                    <img src="/images/guns.jpg" alt="pinacoteca">
+                    <div class="caption">
+                        <h2>Você sabe o que aconteceu hoje, só que há 28 anos...?</h2>
+                        <p>No dia 21 de julho de 1987 foi lançado o primeiro álbum da banda Guns N´ Roses - Appetite for Destruction.</p>
+                        <p class="final-paragraph">O álbum possui faixas de super sucessos como "Welcome to the Jungle", "It's So Easy", "Paradise City" e a inesquecível e inconfundível "Sweet Child o' Mine".</p>
+                        <div class="center-block"><a href="#" >continuar</a></div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="col-md-4 col-sm-6">
+            <h1>No presente</h1>
+            <article class="col-md-12">
+                <div class="thumbnail">
+                    <img src="/images/pinacoteca.png" alt="pinacoteca">
+                    <div class="caption">
+                        <h2>Você sabe o que acontece hoje?</h2>
+                        <p>Exposição 'A Paisagem na Arte' leva telas de pintores britânicos à Pinacoteca do Estado</p>
+                        <p class="final-paragraph">a mostra exibe mais de 100 obras de pintores que marcaram a história da arte britânica em três diferentes épocas: os topográficos e clássicos do século 18;</p>
+                        <div class="center-block"><a href="#" >continuar</a></div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="col-md-4 col-sm-6">
+            <h1>No futuro</h1>
+            <article class="col-md-12">
+                <div class="thumbnail">
+                    <img src="/images/delacroix.png" alt="pinacoteca">
+                    <div class="caption">
+                        <h2>Você sabe o que vai acontecer hoje, só que daqui a 2 meses...?</h2>
+                        <p>Obras de Delacroix e Cézanne ganham exposição no MASP</p>
+                        <p class="final-paragraph"> O pintor, que como poucos soube sublimar os sentimentos por meio da cor, escreveu: "…nem sempre a pintura precisa de um tema".</p>
+                        <div class="center-block"><a href="#" >continuar</a></div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 </html>
